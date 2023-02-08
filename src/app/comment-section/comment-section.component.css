@@ -1,0 +1,51 @@
+
+textarea{
+    color:black !important
+}
+
+.comment-img{
+    width:40px;
+    height:50px;
+    margin-bottom: 5px;
+
+    
+}
+.comment-img >img{
+    width:100%;
+    border-radius: 50%;
+    
+
+}
+.star-cont i{
+    margin-right: 10px;
+    color:gold !important;
+}
+
+.comment-box{
+    margin-top: 15px;
+
+}
+
+.comment-header{
+   display: flex;
+   align-items: center;
+}
+
+.comment-header div{
+    margin-right: 5px;
+}
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width:85%;
+}
+
+.loader{
+    color:white;
+}

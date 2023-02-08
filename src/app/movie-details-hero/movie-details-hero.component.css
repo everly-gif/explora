@@ -1,0 +1,46 @@
+.main-container{
+    width:100%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    
+}
+.container-child{
+    width: 50%;
+    margin: 50px;
+    padding: 30px;
+}
+
+.img-container{
+    width: 100%;
+    text-align: center;
+}
+
+.img-container > img{
+    width:450px;
+    height:550px;
+   
+}
+
+.container-child button{
+    margin-right: 20px;
+}
+
+.content-container{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:500px;
+}
+
+.star-cont i{
+    margin-right: 10px;
+    color:gold !important;
+}
+
+@media screen and (max-width:1095px){
+    .main-container{
+        flex-wrap: wrap;
+    }
+}
