@@ -1,0 +1,17 @@
+nav{
+    background-color: black !important;
+}
+.nav-search{
+  display: flex;
+}
+.login:hover{
+  color: #ccc !important;
+}
+@media screen and (max-width : 990px){
+    .nav-form{
+        flex-direction: column;
+    }
+    .nav-form form{
+        margin-bottom: 10px;
+    }
+}

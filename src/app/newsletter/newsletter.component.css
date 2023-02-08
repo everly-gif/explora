@@ -1,0 +1,11 @@
+.newsletter{
+    
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width:843px){
+   
+    form{
+        width: 90% !important;
+    }
+}
