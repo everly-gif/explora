@@ -1,0 +1,89 @@
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    /* height: 70vh; */
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(14, 13, 13, 1);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px grey;
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+
+.login-box .form-contents{
+    position: relative;
+}
+
+
+.login-box .form-contents input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .form-contents label {
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(135, 219, 236);
+    font-size: 20px;
+    transition: .5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.login-box .form-contents small{
+    color: #fff;
+}
+  .btn{
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+  .button1{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #78c4d1;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+  .button1:hover {
+    background-color: #8decf3;
+    color: white;
+  }
+  
