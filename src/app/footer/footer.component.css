@@ -1,0 +1,24 @@
+footer{
+    color:white;
+    overflow: hidden;
+}
+ul li{
+    list-style-type: none;
+    list-style-position: outside;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+}
+ul{
+    padding-left: 0;
+}
+@media screen and (max-width:1077px){
+   
+    footer .row{
+        display: grid !important;
+        grid-template-columns: auto;
+    }
+}
