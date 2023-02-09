@@ -93,3 +93,8 @@
     color: white;
   }
   
+  @media screen and (max-width:588px){
+    .login-box{
+      width:350px;
+    }
+  }

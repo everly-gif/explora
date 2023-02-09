@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     background: #fff !important;
-    width:40%;
+    width:500px;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -187,3 +187,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  @media screen and (max-width:588px){
+    .login-box{
+      width:350px;
+    }
+  }
