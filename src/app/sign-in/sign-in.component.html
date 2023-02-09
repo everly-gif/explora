@@ -1,0 +1,63 @@
+<div class="login-box-parent">
+<div class="login-box">
+    <h2 style="background-color: transparent; text-align: center; ">
+    LOGIN
+    </h2>
+  
+    <form #f="ngForm" novalidate (ngSubmit)="save(f.value, f.form.valid)">
+      <!-- we will place our fields here -->
+      <!--name-->
+      <div class="form-contents">
+        <label>Name</label>
+        <!--bind name to ngModel, it's required with minimum 5 characters-->
+        <input type="text" name="name" [(ngModel)]="user.name" #name="ngModel" required minlength="5"
+          class="form-control">
+        <!--show error only when field is not valid & it's dirty or form submited-->
+        <small [hidden]="name.valid || (name.pristine && !f.submitted)">
+          Name is required (minimum 5 characters).
+        </small>
+      </div>
+  
+  
+      <div class="form-contents">
+        <label>Email</label>
+        <!--bind name to ngModelf, it's required with minimum 5 characters-->
+        <input type="email" name="email" [(ngModel)]="user.email" #email="ngModel" required minlength="13"
+          class="form-control">
+        <!--show error only when field is not valid & it's dirty or form submited-->
+        <small [hidden]="email.valid || (email.pristine && !f.submitted)">
+          Email is required (minimum 13 characters).
+        </small>
+      </div>
+  
+      <div class="form-contents">
+        <label>Password</label>
+        <!--bind name to ngModelf, it's required with minimum 5 characters-->
+        <input type="password" name="password" [(ngModel)]="user.password" #password="ngModel" required minlength="8"
+          class="form-control">
+        <!--show error only when field is not valid & it's dirty or form submited-->
+        <small [hidden]="password.valid || (password.pristine && !f.submitted)">
+          Email is required (minimum 13 characters).
+        </small>
+      </div>
+  <div class="btn">
+      <button class="button1" type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  <!-- <div class="fcontainer">
+    <h4 class="text-success">Your Details</h4><br>
+    <div class="display">
+      <h5> Name: {{f.value.name}}</h5>
+      <h5> Email : {{f.value.email}}</h5>
+    </div> -->
+    <!--    <h5> Gender: {{f.value.gender}}</h5>
+           <h5> Course: {{f.value.course}}</h5>
+           <h5> Other Recommendation : {{f.value.other}}</h5> -->
+    <!-- <div>
+         <h5> {{f.value|json}}</h5>
+        </div> -->
+</div>
