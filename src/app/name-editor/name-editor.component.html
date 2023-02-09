@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP FORM</title>
+
+</head>
+
+<body>
+
+    <div class="login-box-parent">
+    <div class="login-box">
+
+        <h2 style="text-align: center;"> SIGN UP</h2>
+
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="user-box">
+            <label for="first-name">First Name: </label>
+            <input id="first-name" type="text" formControlName="firstName">
+            </div>
+            <br>
+            <div class="user-box">
+            <label for="last-name">Last Name: </label>
+            <input id="last-name" type="text" formControlName="lastName">
+        </div>
+            <br>
+            <div class="user-box">
+            <label for="email">Email: </label>
+            <input id="email" type="email" formControlName="email">
+            </div>
+            <br>
+
+            <div class="user-box">
+            <label for="email">Password: </label>
+            <input id="password" type="password" formControlName="password">
+            </div>
+
+            <!-- <div formGroupName="address">
+
+  
+    <label for="street">Street: </label>
+    <input id="street" type="text" formControlName="street"><br>
+  
+    <label for="city">City: </label>
+    <input id="city" type="text" formControlName="city"><br>
+  
+    <label for="state">State: </label>
+    <input id="state" type="text" formControlName="state"><br>
+  
+    <label for="zip">Zip Code: </label>
+    <input id="zip" type="text" formControlName="zip"><br>
+  </div> -->
+
+            <!-- <input type="submit" value="Done"> -->
+
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+        </form>
+   
+
+    <p>Form Status: {{ profileForm.status }}</p>
+
+</div>
