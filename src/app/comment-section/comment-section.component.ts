@@ -32,6 +32,5 @@ export class CommentSectionComponent implements OnInit {
     console.log(reviewForm.value);
     this.reviews.push(reviewForm.value);
     reviewForm.reset();
-    this.ngOnInit();
   }
 }
