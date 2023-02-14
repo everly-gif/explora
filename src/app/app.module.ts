@@ -18,6 +18,7 @@ import { CommentSectionComponent } from './comment-section/comment-section.compo
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { WatchlistComponent } from './watchlist/watchlist.component';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule
     
   ],
   

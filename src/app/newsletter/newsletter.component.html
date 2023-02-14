@@ -1,8 +1,20 @@
 <div  class="newsletter pt-3 d-flex flex-column justify-content-center align-items-center mt-5 ">
-    <form  class=" w-50 mb-5">
-        <h3 class="text-center text-light mb-5">Subscribe To Our Monthly Newsletter</h3>
-        <input  class="form-control mb-3 " type="email" placeholder="Enter Email" required>
-        <button class="btn btn-outline-info w-100" type="submit">Subscribe</button>
+    <form  class=" w-50 mb-5" #newsletterForm="ngForm" (ngSubmit) = "onSubmit(newsletterForm)">
+        <h3 class="text-center text-light mb-5" >Subscribe To Our Monthly Newsletter</h3>
+        <div class="mb-3">
+            <input class="form-control" id="email" #email="ngModel" type="email" placeholder="Enter email" name="email" email maxlength="30" required ngModel>
+            <div *ngIf="email.touched && email.invalid" style="color:red;">
+                <div *ngIf="email?.errors?.['required']" style="color:red;">
+                Email is required</div>
+             </div>
+    </div>
+        <!-- <input  class="form-control mb-3 " type="email" email id="email" #email="ngModel" maxlength="30" placeholder="Enter Email" required ngModel>
+        <div *ngIf="email.touched && email.invalid" style="color:red;">
+            <div *ngIf="email?.errors?.['required']" style="color:red;">
+            Email is required</div>
+         </div> -->
+        <button class="btn btn-outline-info w-100" type="submit">Subscribe</button><br>
+        <p style="color:white">{{status}}</p>
     </form>
 </div>
 
