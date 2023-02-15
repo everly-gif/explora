@@ -12,8 +12,23 @@
         <p>Genre: {{details.genre}}</p>
         <p>Release Date: {{details.release_date}}</p>
         <p>Runtime: {{details.runtime}}</p>
-        <h3 style="color:gold">Rating: {{details.rating}}</h3>
-        <!-- <div class="star-cont"><i class="fa fa-star fa-2x" aria-hidden="true"></i> <i class="fa fa-star fa-2x" aria-hidden="true"></i> <i class="fa fa-star fa-2x" aria-hidden="true"></i> <i class="fa fa-star fa-2x" aria-hidden="true"></i> <i class="fa fa-star-o fa-2x" aria-hidden="true"></i></div> -->
+
+        <div class="rating">
+        <div class="grey-cont">
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+             <i class="fa fa-star fa-2x" aria-hidden="true"></i> 
+             <i class="fa fa-star fa-2x" aria-hidden="true"></i> 
+             <i class="fa fa-star fa-2x" aria-hidden="true"></i> 
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="star-cont"  style="width:{{averageRating}}%">
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+             <i class="fa fa-star fa-2x" aria-hidden="true"></i> 
+             <i class="fa fa-star fa-2x" aria-hidden="true"></i> 
+             <i class="fa fa-star fa-2x" aria-hidden="true"></i> 
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        </div>
+    </div><br><br>
         <div class="button-cont"><button class="btn btn-outline-info"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch</button>
         <button class="btn btn-outline-secondary"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Watchlist</button> 
         </div>

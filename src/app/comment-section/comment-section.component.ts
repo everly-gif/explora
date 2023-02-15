@@ -29,8 +29,9 @@ export class CommentSectionComponent implements OnInit {
        console.log(response);
        this.status = response.message;
     })
+    reviewForm.value.created_at=new Date();
     console.log(reviewForm.value);
-    this.reviews.push(reviewForm.value);
+    this.reviews.unshift(reviewForm.value);
     reviewForm.reset();
   }
 }

@@ -16,9 +16,9 @@ textarea{
     
 
 }
-.star-cont {
- 
-    color:gold !important;
+
+.selected{
+    color: gold !important;
 }
 
 .comment-box{

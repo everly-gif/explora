@@ -15,7 +15,24 @@
     width: 100%;
     text-align: center;
 }
+.rating{
+    position: relative;
+    display: flex;
+    width: 200px;
+}
+.star-cont{
+    position: absolute;
+    overflow: hidden;
+    display: flex;
 
+}
+.grey-cont{
+    display: flex;
+}
+.grey-cont i{
+    margin-right: 10px;
+   
+}
 .img-container > img{
     width:450px;
     height:550px;

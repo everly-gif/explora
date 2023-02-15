@@ -22,7 +22,7 @@
     </div>
     <div class="mb-3">
         <input class="form-control" id="rating" #rating="ngModel" type="text" pattern="^[0-9]+(.[0-9]{0,1})?$"
-        placeholder="Enter rating" name="rating"  required ngModel>
+        placeholder="Enter rating" name="rating" max="5" min="1" required ngModel>
         <div *ngIf="rating.touched && rating.invalid" style="color:red;">
             <div *ngIf="rating?.errors?.['required']" style="color:red;">
             Rating is required</div>
@@ -50,9 +50,11 @@
        </div>
         <div class="comment-text ">
             <div class="star-cont">
+                <i class="fa fa-star me-2"  *ngFor="let item of [1,2,3,4,5]" [class.selected]="item<=review.rating" aria-hidden="true" ></i>
                 Rating : {{review.rating}}
             </div>
-            <small>{{review.review}}</small>
+            <small>{{review.review}}</small><br>
+            <small>Commented on {{review.created_at | date}}</small>
         </div>
     </div>
    
@@ -65,6 +67,7 @@
        </div>
         <div class="comment-text ">
             <div  class="star-cont">
+                <i class="fa fa-star me-2" aria-hidden="true"></i>
                 <i class="fa fa-star me-2" aria-hidden="true"></i>
                 <i class="fa fa-star me-2" aria-hidden="true"></i>
                 <i class="fa fa-star me-2" aria-hidden="true"></i>
